@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" fill="none">
+  <defs>
+    <linearGradient id="left-ring-grad" x1="100" y1="90" x2="190" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0091ff" />
+      <stop offset="60%" stop-color="#0077e6" />
+      <stop offset="100%" stop-color="#005ecb" />
+    </linearGradient>
+
+    <linearGradient id="right-ring-grad" x1="200" y1="90" x2="290" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00c8e0" />
+      <stop offset="50%" stop-color="#00b4d8" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="arrow-ribbon-grad" x1="90" y1="180" x2="310" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0072eb" />
+      <stop offset="25%" stop-color="#0099ff" />
+      <stop offset="55%" stop-color="#00c9c8" />
+      <stop offset="85%" stop-color="#05c270" />
+      <stop offset="100%" stop-color="#00d084" />
+    </linearGradient>
+
+    <filter id="shadow-soft" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0077e6" flood-opacity="0.25" />
+    </filter>
+
+    <filter id="ribbon-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="3" stdDeviation="4" flood-color="#003580" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- Left Figure Head -->
+  <circle cx="140" cy="74" r="18" fill="#0080f5" filter="url(#shadow-soft)" />
+
+  <!-- Right Figure Head -->
+  <circle cx="244" cy="66" r="18" fill="#00b8d4" filter="url(#shadow-soft)" />
+
+  <!-- Left Body Ring -->
+  <circle cx="140" cy="144" r="41" stroke="url(#left-ring-grad)" stroke-width="17" fill="none" filter="url(#shadow-soft)" />
+
+  <!-- Right Body Ring -->
+  <circle cx="244" cy="136" r="41" stroke="url(#right-ring-grad)" stroke-width="17" fill="none" filter="url(#shadow-soft)" />
+
+  <!-- Sweeping Arrow Ribbon -->
+  <g filter="url(#ribbon-shadow)">
+    <path 
+      d="M 98 168 C 96 188, 122 202, 150 188 C 182 172, 222 134, 276 86" 
+      stroke="url(#arrow-ribbon-grad)" 
+      stroke-width="17" 
+      stroke-linecap="round" 
+      fill="none" 
+    />
+    <!-- Arrowhead -->
+    <path 
+      d="M 298 62 L 264 74 L 282 104 Z" 
+      fill="#00d084" 
+    />
+  </g>
+
+  <!-- Wordmark meetflow -->
+  <g id="wordmark" transform="translate(200, 275)" text-anchor="middle">
+    <text font-family="-apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif" font-weight="800" font-size="52" letter-spacing="-1.5">
+      <tspan fill="#11223e">meet</tspan><tspan fill="#008be5">flow</tspan>
+    </text>
+  </g>
+</svg>

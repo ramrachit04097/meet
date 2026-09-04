@@ -1,0 +1,8 @@
+{
+  "name": "MeetFlow",
+  "description": "Cinematic full-width call-to-action section with HLS video background, liquid glassmorphism, and minimal footer.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

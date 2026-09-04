@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none">
+  <defs>
+    <!-- Left Ring Gradient -->
+    <linearGradient id="mf-full-left-ring" x1="120" y1="100" x2="230" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0096ff" />
+      <stop offset="50%" stop-color="#0077e6" />
+      <stop offset="100%" stop-color="#0055cb" />
+    </linearGradient>
+
+    <!-- Right Ring Gradient -->
+    <linearGradient id="mf-full-right-ring" x1="220" y1="90" x2="330" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00c8e2" />
+      <stop offset="40%" stop-color="#00b4d8" />
+      <stop offset="100%" stop-color="#05c270" />
+    </linearGradient>
+
+    <!-- Sweeping Arrow Gradient -->
+    <linearGradient id="mf-full-arrow-grad" x1="110" y1="215" x2="335" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0072eb" />
+      <stop offset="25%" stop-color="#0099ff" />
+      <stop offset="55%" stop-color="#00c9c8" />
+      <stop offset="80%" stop-color="#05c270" />
+      <stop offset="100%" stop-color="#00d084" />
+    </linearGradient>
+
+    <!-- Left Head Gradient -->
+    <linearGradient id="mf-full-head-left" x1="150" y1="50" x2="195" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00a2ff" />
+      <stop offset="100%" stop-color="#0070e0" />
+    </linearGradient>
+
+    <!-- Right Head Gradient -->
+    <linearGradient id="mf-full-head-right" x1="250" y1="40" x2="295" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d2ec" />
+      <stop offset="100%" stop-color="#00a8cc" />
+    </linearGradient>
+
+    <filter id="mf-full-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#004899" flood-opacity="0.2" />
+    </filter>
+
+    <filter id="mf-full-arrow-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="1" dy="5" stdDeviation="5" flood-color="#002d6b" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Icon Section -->
+  <g id="full-icon">
+    <!-- Left Figure Head -->
+    <circle cx="178" cy="80" r="23" fill="url(#mf-full-head-left)" filter="url(#mf-full-shadow)" />
+
+    <!-- Right Figure Head -->
+    <circle cx="282" cy="70" r="23" fill="url(#mf-full-head-right)" filter="url(#mf-full-shadow)" />
+
+    <!-- Left Body Ring -->
+    <circle cx="178" cy="168" r="49" stroke="url(#mf-full-left-ring)" stroke-width="19" fill="none" filter="url(#mf-full-shadow)" />
+
+    <!-- Right Body Ring -->
+    <circle cx="282" cy="158" r="49" stroke="url(#mf-full-right-ring)" stroke-width="19" fill="none" filter="url(#mf-full-shadow)" />
+
+    <!-- Dynamic Sweeping Arrow Ribbon -->
+    <g filter="url(#mf-full-arrow-shadow)">
+      <path 
+        d="M 128 198 C 125 220, 160 236, 196 216 C 235 194, 282 144, 318 102" 
+        stroke="url(#mf-full-arrow-grad)" 
+        stroke-width="18" 
+        stroke-linecap="round" 
+        fill="none" 
+      />
+      <!-- Arrowhead pointing up-right -->
+      <polygon 
+        points="348,74 306,86 334,122" 
+        fill="#00d084" 
+      />
+    </g>
+  </g>
+
+  <!-- Wordmark Section: meetflow -->
+  <g id="full-wordmark" transform="translate(250, 345)" text-anchor="middle">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Outfit', 'Inter', 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="70" letter-spacing="-2">
+      <tspan fill="#101f3d">meet</tspan><tspan fill="#008be5">flow</tspan>
+    </text>
+  </g>
+</svg>
